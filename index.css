@@ -1,0 +1,240 @@
+*{
+    margin : 0;
+    padding : 0;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+body{
+    background-color: #34656D;
+}
+
+header{
+    background-color: #334443;
+    color : #FAF8F1;
+    width : 100%;
+}
+
+.logo{
+    margin-top : 8px;
+    font-size : 28px;
+    font-weight : 600;
+    margin-left : 10px;
+}
+
+.home-section{
+    display : flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.navbar ul{
+    list-style: none;
+    display : flex;
+    align-items: center;
+    gap : 10px;
+}
+
+.navbar li{
+    margin-right : 10px;
+    font-size : 24px;
+    font-weight : 600;
+    cursor: pointer;
+}
+
+.navbar button{
+    color :#EFECE3;
+    font-size : 22px;
+    padding : 2px 8px;
+    background-color: transparent;
+    border: 1px #EFECE3 solid;
+    border-radius : 10px;
+}
+
+.navbar button:hover{
+    background-color: #EFECE3;
+    color : black;
+}
+
+.banner-section{
+    margin-top : 80px;
+}
+
+.img img{
+    border-radius : 10px;
+}
+
+.banner-detail p{
+    text-align: center;
+    font-size : 30px;
+    font-weight : 600;
+}
+
+.banner-detail b{
+    font-size : 50px;
+    color :  #334443;
+}
+
+.cources{
+    text-align: center;
+    margin-top : 140px;
+}
+
+.cources h2{
+    color : #334443;
+    font-weight : 600;
+    font-size : 40px;
+}
+
+.cource-section{
+    width : 200px;
+}
+
+.cources-name{
+    border-radius : 10px;
+}
+
+.cource-detail{
+    height : 220px;
+    border-radius: 10px;
+}
+
+.cource-detail h3{
+    margin-top: 20px;
+    font-weight : 700;
+}
+
+.about-us-section{
+    margin-top : 140px;
+}
+
+.login-form h1{
+    color : #334443;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight : 600;
+}
+
+.login-form label{
+    font-size : 18px;
+    font-weight : 600;
+}
+
+.login-form input{
+    margin-top : 4px;
+    padding : 5px 5px;
+    width : 70%;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid black;
+    color : black;
+}
+
+.login-form input:focus{
+    outline: none;
+}
+
+.login-form button{
+    padding : 5px 10px;
+    background-color: transparent;
+    border : 2px solid black;
+    color : black;
+    border-radius : 10px; 
+}
+
+.login-form button:hover{
+    background-color: #334443;
+    color : white;
+}
+
+.contact-section h1{
+    color : #334443;
+    text-align: center;
+    font-weight : 600;
+}
+
+.contact-section p{
+    margin-top : 60px;
+}
+
+.contact-section h4{
+    color : #334443;
+    margin-top : 40px;
+    font-weight : 600;
+    font-size : 28px;
+}
+
+.contact-section .info{
+    margin-top : 30px;
+}
+
+footer{
+    height : 60px;
+    color : white;
+    text-align : center;
+    margin-top : 60px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (max-width:800px)
+{
+    .img{
+        display : none;
+        text-align: center;
+    }
+
+    .img img{
+        height : 200px;
+        width : 300px;
+    }
+
+    .banner-detail p{
+        text-align: center;
+    }
+
+    .navbar li{
+        display : none;
+    }
+
+    .logo{
+        font-size : 18px;
+    }
+
+    .cource-detail{
+        height : 100px;
+    }
+
+    .contact-section h1{
+       margin-top : 20px; 
+    }
+    .contact-section p{
+        margin-top : 20px;
+    }
+}
+
+@media (max-width:1280px){
+    .img img{
+        height : 300px;
+        width : 400px;
+    }
+
+    .cource-detail{
+        height : 300px;
+    }
+}
+
+@media (max-width : 1000px){
+
+    .img{
+        text-align: center;
+    }
+
+    .cource-detail{
+        height : 400px;
+    }
+}
