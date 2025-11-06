@@ -10,231 +10,163 @@ body{
     background-color: #34656D;
 }
 
-header{
+.header{
+    height : 60px;
     background-color: #334443;
     color : #FAF8F1;
     width : 100%;
+    display : flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .logo{
-    margin-top : 8px;
     font-size : 28px;
-    font-weight : 600;
     margin-left : 10px;
 }
 
-.home-section{
-    display : flex;
-    justify-content: space-between;
-    align-items: baseline;
-}
-
-.navbar ul{
-    list-style: none;
-    display : flex;
-    align-items: center;
-    gap : 10px;
-}
-
-.navbar li{
+.nav-links a{
+    text-decoration: none;
+    color : #FAF8F1;
+    font-size : 20px;
     margin-right : 10px;
-    font-size : 24px;
-    font-weight : 600;
-    cursor: pointer;
 }
 
-.navbar button{
-    color :#EFECE3;
-    font-size : 22px;
-    padding : 2px 8px;
-    background-color: transparent;
-    border: 1px #EFECE3 solid;
-    border-radius : 10px;
-}
-
-.navbar button:hover{
-    background-color: #EFECE3;
-    color : black;
-}
-
-.banner-section{
+.hero{
     margin-top : 80px;
 }
 
-.img img{
+.hero-img img{
     border-radius : 10px;
+    box-shadow : 0 2px 8px black;
 }
 
-.banner-detail p{
+.hero-info, .hero-info h1{
     text-align: center;
-    font-size : 30px;
-    font-weight : 600;
-}
-
-.banner-detail b{
-    font-size : 50px;
-    color :  #334443;
-}
-
-.cources{
-    text-align: center;
-    margin-top : 140px;
-}
-
-.cources h2{
     color : #334443;
     font-weight : 600;
-    font-size : 40px;
 }
 
-.cource-section{
-    width : 200px;
+.hero-info p{
+    text-align : center;
+    font-size : 18px;
+    font-weight : 500;
 }
 
-.cources-name{
+.hero-info button{
+    padding : 5px 10px;
     border-radius : 10px;
+    background-color: transparent;
+    border : 2px solid black;
+    text-align : center;
 }
 
-.cource-detail{
-    height : 220px;
-    border-radius: 10px;
+.hero-info button:hover{
+    background-color: #334443;
+    color : #FAF8F1;
 }
 
-.cource-detail h3{
-    margin-top: 20px;
+.features{
+    margin-top : 100px;
+}
+
+.features h1{
+    text-align : center;
+    color : #334443;
     font-weight : 700;
 }
 
-.about-us-section{
-    margin-top : 140px;
-}
-
-.login-form h1{
-    color : #334443;
-    text-align: center;
-    margin-bottom: 40px;
-    font-weight : 600;
-}
-
-.login-form label{
-    font-size : 18px;
-    font-weight : 600;
-}
-
-.login-form input{
-    margin-top : 4px;
-    padding : 5px 5px;
-    width : 70%;
-    border: none;
-    background-color: transparent;
-    border-bottom: 2px solid black;
-    color : black;
-}
-
-.login-form input:focus{
-    outline: none;
-}
-
-.login-form button{
-    padding : 5px 10px;
-    background-color: transparent;
-    border : 2px solid black;
-    color : black;
-    border-radius : 10px; 
-}
-
-.login-form button:hover{
-    background-color: #334443;
-    color : white;
-}
-
-.contact-section h1{
-    color : #334443;
-    text-align: center;
-    font-weight : 600;
-}
-
-.contact-section p{
-    margin-top : 60px;
-}
-
-.contact-section h4{
-    color : #334443;
+.features .feature-grid{
     margin-top : 40px;
-    font-weight : 600;
-    font-size : 28px;
 }
 
-.contact-section .info{
-    margin-top : 30px;
+.feature-box h3{
+    text-align: center;
+    margin-top : 20px;
+    font-size : 24px;
+    font-weight : 600;
+}
+
+.feature-box p{
+    font-size : 18px;
+    text-align : center;
+    font-weight : 500;
+    margin-top : 10px;
+}
+
+.testimonials{
+    margin-top : 100px;
+}
+
+.testi-info{
+    border-radius : 10px;
+}
+
+.testi-info p{
+    margin-top : 20px;
+    font-weight : 600;
+}
+
+.testi-info h4{
+    font-weight : 700;
 }
 
 footer{
-    height : 60px;
-    color : white;
-    text-align : center;
-    margin-top : 60px;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 10px 10px;
+    margin-top : 50px;
+    background-color: #334443;
+    color : #FAF8F1;
+    text-align: center;
 }
 
+footer a{
+    text-decoration: none;
+    color : #FAF8F1;
+}
 
-@media (max-width:800px)
-{
-    .img{
+@media(max-width : 900px){
+
+    .hero-img{
         text-align: center;
     }
-
-    .img img{
+    .hero-img img{
         height : 200px;
         width : 300px;
     }
 
-    .banner-detail p{
-        text-align: center;
-    }
-
-    .navbar li{
+    .nav-links{
         display : none;
     }
 
-    .logo{
-        margin-top : 10px;
-        font-size : 18px;
+    .features .feature-box{
+        margin-top : 40px;
     }
 
-   .cource-detail{
-        height : 300px;
-    }
-
-    .contact-section h1{
-       margin-top : 20px; 
-    }
-    .contact-section p{
-        margin-top : 20px;
+    .testimonials .testi-info{
+        margin-top : 40px;
     }
 }
 
-@media (width:1024px){
-    .img img{
+@media (width : 1024px){
+
+    .hero-img{
+        text-align: center;
+    }
+    .hero-img img{
         height : 300px;
         width : 400px;
     }
 
-    .cource-detail{
-        height : 300px;
-    }
 }
 
-@media (max-width : 1000px){
+@media (width : 912px){
 
-    .img{
-        text-align: center;
+    .hero-img{
+        text-align: end;
+    }
+    .hero-img img{
+        height : 250px;
+        width : 350px;
     }
 
-    .cource-detail{
-        height : 400px;
-    }
 }
