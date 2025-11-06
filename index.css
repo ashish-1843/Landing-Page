@@ -184,7 +184,6 @@ footer{
 @media (max-width:800px)
 {
     .img{
-        display : none;
         text-align: center;
     }
 
@@ -202,11 +201,12 @@ footer{
     }
 
     .logo{
+        margin-top : 10px;
         font-size : 18px;
     }
 
-    .cource-detail{
-        height : 100px;
+   .cource-detail{
+        height : 300px;
     }
 
     .contact-section h1{
@@ -217,7 +217,7 @@ footer{
     }
 }
 
-@media (max-width:1280px){
+@media (width:1024px){
     .img img{
         height : 300px;
         width : 400px;
