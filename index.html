@@ -25,93 +25,81 @@
         background-color: #FAF8F1;
     }
 
-    .feature-box{
+    .feature-box {
         background-color: #334443;
-        color : #FAF8F1;
-        border-radius : 10px;
+        color: #FAF8F1;
+        border-radius: 10px;
     }
+
+ 
 </style>
 
 <body>
-    <header class="header position-sticky top-0">
+    <header class="header">
         <div class="logo">TechNove</div>
         <nav class="nav-links">
             <a href="#">Home</a>
             <a href="#">Features</a>
             <a href="#">Testimonials</a>
             <a href="#">Contact</a>
+            <button>Sign in</button>
         </nav>
     </header>
 
     <section class="hero">
-        <div class="container">
-            <div class="container-fluid">
-                <div class="row justify-content-between gy-4 align-items-center">
-                    <div class="col-lg-6 col-sm-6 col-12">
-                        <div class="hero-img">
-                            <img src="landing-img.avif" height="400" width="500">
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-sm-6 col-12">
-                        <div class="hero-info">
-                            <h1>Innovating the Future with Samrt Technology.</h1>
-                            <p>We build inteligent solution that simplify your life and grow your business.</p>
-                            <button class="hero-btn">Get Started <i class="fa-solid fa-right-to-bracket"></i></button>
-                        </div>
-                    </div>
-                </div>
+        <div class="hero-sec">
+            <div class="hero-img">
+                <img src="landing-img.avif" height="400" width="500">
             </div>
+        
+
+        <div class="hero-info">
+            <h1>Innovating the Future with Samrt Technology.</h1>
+            <p>We build inteligent solution that simplify your life and grow your business.</p>
+            <button class="hero-btn">Get Started <i class="fa-solid fa-right-to-bracket"></i></button>
+        </div>
         </div>
     </section>
 
     <section class="features">
         <h1>Our Features</h1>
-        <div class="container">
-            <div class="container-fluid">
-                <div class="row feature-grid justify-content-between align-items-center">
-                    <div class="col-lg-3 col-sm-3 col-12 feature-box shadow-lg">
-                        <h3>Smart Automation</h3>
-                        <hr>
-                        <p>Automate task to increase productivity and reduce costs.</p>
-                    </div>
-
-                    <div class="col-lg-3 col-sm-3 col-12 feature-box shadow-lg">
-                        <h3>Secure System</h3>
-                        <hr>
-                        <p>Top level security to protect your valuable data.</p>
-                    </div>
-
-                    <div class="col-lg-3 col-sm-3 col-12 feature-box shadow-lg">
-                        <h3>24/7 Support</h3>
-                        <hr>
-                        <p>Our Team is always here to asist you anytime.</p>
-                    </div>
-                </div>
+        <div class="features-grid">
+            <div class="feature-box">
+                <h3>Smart Automation</h3>
+                <hr>
+                <p>Automate task to increase productivity and reduce costs.</p>
             </div>
+
+            <div class="feature-box ">
+                <h3>Secure System</h3>
+                <hr>
+                <p>Top level security to protect your valuable data.</p>
+            </div>
+
+            <div class="feature-box">
+                <h3>24/7 Support</h3>
+                <hr>
+                <p>Our Team is always here to asist you anytime.</p>
+            </div>
+
         </div>
     </section>
 
     <section class="testimonials">
-        <div class="container">
-            <div class="container-fluid">
-                <div class="row testi-container align-items-center">
-                    <div class="col-lg-6 col-sm-6 col-12">
-                        <h1>What Our Client Says.</h1>
-                    </div>
+        <div class="testi-detail">
+            <div class="testi-heading">
+                <h1>What Our Client Says.</h1>
+            </div>
 
-                    <div class="col-lg-6 col-sm-6 col-12">
-                    <div class="row testi-card justify-content-between align-items-center">
-                        <div class="col-lg-5 col-sm-5 col-12 testi-info shadow-lg">
-                               <p>“Amazing service and easy to use! Highly recommend.”</p>
-                                <h4>- Priya</h4>
-                        </div>
+            <div class="testi-card">
+                <div class="testi-info">
+                    <p>“Amazing service and easy to use! Highly recommend.”</p>
+                    <h4>- Priya</h4>
+                </div>
 
-                         <div class="col-lg-6 col-sm-6 col-12 testi-info shadow-lg">
-                               <p>“TechNova solutions helped us grow faster than ever!”</p>
-                                <h4>- Rahul</h4>
-                        </div>
-                    </div>
-                    </div>
+                <div class="testi-info ">
+                    <p>“TechNova solutions helped us grow faster than ever!”</p>
+                    <h4>- Rahul</h4>
                 </div>
             </div>
         </div>
